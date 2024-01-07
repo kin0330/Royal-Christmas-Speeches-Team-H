@@ -11,7 +11,7 @@ Option 2: Make a speech anonymous and attribute it to Elizabeth or Charles
 Option 3: Craig’s Zeta with Elizabeth and her father’s speeches or Elizabeth and Charles’ speeches.
 ## Methodology and Tools
 ### Data Collection
-The dataset was compiled by leveraging web scraping techniques using Python from the official Royal Family website, specifically https://www.royal.uk/. This process ensured the gathering of comprehensive and accurate transcripts or recordings of Queen Elizabeth II's Christmas speeches.
+The dataset was compiled by leveraging web scraping techniques using Python from the official Royal Family website, specifically https://www.royal.uk/. 
 
 ### Text Analysis
 The analysis employed a two-fold approach:
