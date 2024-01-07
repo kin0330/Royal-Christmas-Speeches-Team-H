@@ -5,7 +5,9 @@ This project aims to conduct a comprehensive linguistic analysis of Queen Elizab
 The dataset used for this analysis consists of 71 Christmas speeches delivered by Queen Elizabeth II during her reign. The dataset includes transcripts or recordings of these speeches, compiled from official sources and archives.
 ## Active Learning Exercise?
 Option 1: Check for similarity between Elizabeth and Charles’ styles with author attribution
+
 Option 2: Make a speech anonymous and attribute it to Elizabeth or Charles
+
 Option 3: Craig’s Zeta with Elizabeth and her father’s speeches or Elizabeth and Charles’ speeches.
 ## Methodology and Tools
 ### Data Collection
