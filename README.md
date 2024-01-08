@@ -1,12 +1,12 @@
 # Linguistic style analysis of Queen Elizabeth II's Christmas speeches
 ## Description
 This project aims to conduct a comprehensive linguistic analysis of Queen Elizabeth II's Christmas speeches. By analyzing a dataset consisting of 72 speeches delivered by Queen Elizabeth II and King Charles III, this project seeks to explore linguistic patterns, content, themes, and changes in her speech style over the years.
-### Research questions
+### **Research questions**
 #### Tools and methods project:
 To what extent does Queen Elizabeth II exhibit a consistent stylistic pattern across her annual Christmas speeches?
 #### Collecting data project:
 What predominant themes are addressed within the Queen's Christmas speeches?
-### Active Learning Exercise
+### **Active Learning Exercise**
 How does sentiment fluctuate throughout Queen Elizabeth II's Christmas speeches?
 ## Dataset description
 The dataset used for this analysis consists of 70 Christmas speeches from Queen Elizabeth II and 2 speeches from King Charles III. The dataset includes transcripts of these speeches, compiled from official sources and archives.
