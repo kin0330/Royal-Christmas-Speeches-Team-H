@@ -12,10 +12,10 @@ How does sentiment fluctuate throughout Queen Elizabeth II's Christmas speeches?
 The dataset used for this analysis consists of 70 Christmas speeches from Queen Elizabeth II and 2 speeches from King Charles III. The dataset includes transcripts of these speeches, compiled from official sources and archives.
 
 ## Methodology and Tools
-### Natural Language Processing
+### Sentiment Analysis Techniques
 
 ### Data Collection and preprocessing
-The dataset was compiled by leveraging web scraping techniques using Python from the official Royal Family website, specifically https://www.royal.uk/. 
+The dataset was compiled by leveraging web scraping techniques using Python from the official Royal Family website, specifically https://www.royal.uk/. Text cleaning including removing punctuation, and irrelevant metadata, and Tokenization are also based on python.
 
 ### Text Analysis
 The analysis employed a two-fold approach:
