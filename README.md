@@ -41,7 +41,50 @@ The saved text files needed to be cleaned because they contained parts that we d
 We added further metadata to the csv file, such as where the speeches were given, when they were first broadcast on TV, etc.<br>
 Finally, we saved the clean corpus and the metadata in the same CSV file.
 
-**9. Research questions**<br>
+**9. Dataset**<br>
+We gathered data and created three datasets in the form of three csv files: data.csv, metadata.csv and enriched-corpus.csv.<br>
+The ***data.csv*** file includes the cleaned sections of the speeches (abstract, introduction, main text) and their word count.<br>
+| Columns | Descriptions |
+| ------------- | ------------- |
+| Title | the title of the speech |
+| CleanedAbstract | the cleaned abstract section of the speech |
+| AbstractWordCount | the number of words appearing in the abstract |
+| CleanedIntro | the cleaned introduction section of the speech |
+| IntroWordCount | the number of words appearing in the introduction |
+| CleanedMainText | the cleaned main text section of the speech |
+| MainTextWordCount | the number of words appearing in the main text |
+
+The ***metadata.csv*** file contains further information on the speeches, such as in which year they appeared, which monarch delivered the speech, the type of media that broadcast the speech, etc.<br>
+| Columns | Descriptions |
+| ------------- | ------------- |
+| year | the year in which the speech was given |
+| monarch | the name of the monarch by whom the speech was delivered |
+| media | the type of media that broadcast the speech |
+| channel | the name of the radio or TV channel that broadcast the speech |
+| place | the location at which the speech was given |
+| context | additional contextual information about the speech |
+
+The ***enriched_corpus.csv*** incorporates all the information provided in the data.csv and metadata.csv and is further supplemented with lists of word tokens, sentence tokens and lemmas of the main text of each speech.
+| Columns | Descriptions |
+| ------------- | ------------- |
+| year | the year in which the speech was given |
+| monarch | the name of the monarch by whom the speech was delivered |
+| media | the type of media that broadcast the speech |
+| channel | the name of the radio or TV channel that broadcast the speech |
+| place | the location at which the speech was given |
+| context | additional contextual information about the speech |
+| Title | the title of the speech |
+| CleanedAbstract | the cleaned abstract section of the speech |
+| AbstractWordCount | the number of words appearing in the abstract |
+| CleanedIntro | the cleaned introduction section of the speech |
+| IntroWordCount | the number of words appearing in the introduction |
+| CleanedMainText | the cleaned main text section of the speech |
+| MainTextWordCount | the number of words appearing in the main text |
+| WordTokensMain | the word tokens of the main text section of the speech |
+| SentenceTokensMain | the sentence tokens of the main text section of the speech |
+| LemmasMain | the lemmas of the main text section of the speech |
+
+**10. Research questions**<br>
 
 ***Collecting Data:***<br>
 Are there any other keywords / key themes in the Queen’s Christmas speeches other than family, the Commonwealth and Christmas? 
@@ -51,29 +94,29 @@ Are there any other keywords / key themes in the Queen’s Christmas speeches ot
 3. a) What are the most used words by the Queen in 1952, 1953 and by the King in 2022, 2023? (a comparison of the Queen’s and the King’s first two speeches) <br>
 b) What are the most used words by the Queen in 2020, 2021 and by the King in 2022, 2023? (a comparison of the last two speeches of the Queen and the first two speeches of the King, from the perspective of continuity)
 
-**10. Collecting Data analysis**<br>
+**11. Collecting Data analysis**<br>
 
-**11. Stylometric analysis**<br>
+**12. Stylometric analysis**<br>
 In order to answer our research questions for Tools and Methods, we carried out a stylometric analysis and utilized the Stylo package of R.<br>
 We used Cluster Analysis and Craig's Zeta score and visualized the results in the form of dendrograms and graphs.
 
-**12. Tutorial**<br>
+**13. Tutorial**<br>
 We provide a tutorial on the use of the web crawler and on the cleaning and pre-processing in the form of Jupyter Notebooks.<br>
 We also created a tutorial for the exploration of themes using the tool Voyant.
 
-**13. Active Learning Exercises**<br>
+**14. Active Learning Exercises**<br>
 We created active learning exercises on carrying out a sentiment analysis of the corpus.
 
-**14. Research output**<br>
+**15. Research output**<br>
 To publish our findings, we created the following website: https://royal-christmas-messages.my.canva.site/
 
-**15. Files in this repository**<br>
+**16. Files in this repository**<br>
 - description of the repository and the group projects (README.md )
 - Jupyter Notebook: first upload for the web crawler (queen_crawler.ipynb)
 - Jupyter Notebook: cleaning and pre-processing the corpus (corpus_processing.ipynb)
-- cleaned data csv (data.csv)
-- fully pre-processed and enriched with metadata (enriched_corpus.csv)
-- metadata on the Queen’s speeches (metadata.csv)
+- csv file containing the cleaned speeches (data.csv)
+- csv file containing metadata on the Queen’s speeches (metadata.csv)
+- csv file containing the cleaned speeches enriched with metadata on the Queen's speeches and with tokenized and lemmatized version of the main text section of the speeches (enriched_corpus.csv)
 - report on the stylometric analysis of the corpus (….pdf)
 - data management plan (….pdf)
 - …
