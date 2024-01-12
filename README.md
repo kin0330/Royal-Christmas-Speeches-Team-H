@@ -64,5 +64,5 @@ To publish our findings, we created the following website: https://royal-christm
 - data management plan (….pdf)
 - …
 
-**Contributors**
+**Contributors**<br>
 Bente :rose:  Mathilde :sunflower: Mengying :leaves: Miriam :maple_leaf: Reka :evergreen_tree: Shiyan :herb: Yunchi :volcano:
