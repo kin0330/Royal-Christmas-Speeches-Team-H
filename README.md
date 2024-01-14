@@ -34,7 +34,7 @@ b) provide a tutorial<br>
 c) create active learning exercises<br>
 
 **7. Data collection process**<br>
-The transcripts of the speeches were collected through web scraping from the official website of the British Royal family (https://www.royal.uk/the-christmas-broadcast). We created a web crawler that goes through the links by formatting the string and saves the HTML files. After this the text is extracted using the Beautiful Soup library and saved in text files.
+The transcripts of the speeches were collected through web scraping from the [official website of the British Royal family](https://www.royal.uk/the-christmas-broadcast). We created a web crawler that goes through the links by formatting the string and saves the HTML files. After this the text is extracted using the Beautiful Soup library and saved in text files.
 
 **8. Cleaning and pre-processing**<br>
 The saved text files needed to be cleaned because they contained parts that we did not mean to analyze (abstract, introduction). Therefore, we manually annotated different sections of the transcripts (abstract, introduction, main part) to be able to carry out analyses on the main part. We saved the cleaned text in a CSV file, and the main text in txt files.<br>
