@@ -88,25 +88,24 @@ The ***enriched_corpus.csv*** incorporates all the information provided in the d
 
 **10. Research questions**<br>
 
-***Collecting Data:***<br>1. Catsiapis (2005) mentions ‘family’, ’Commonwealth’ and ’Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?
-2. When did the term 'empire' change to 'commonwealth'? And what terms are the most associated with both?
-3. What does readability analysis tell us?
+***Collecting Data:***<br>1. Catsiapis (2005) mentions ‘family’, ’Commonwealth’ and ’Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?<br>
+2. When did the term 'empire' change to 'commonwealth'? And what terms are the most associated with both?<br>
+3. What does readability analysis tell us?<br>
 
 ***Tools and Methods:***<br>1. Does the style of the Queen’s Christmas speeches evolve over time or does it stay the same? <br>
 2. Are King Charles III's speeches stylistically similar or dissimilar to Queen Elizabeth's Christmas speeches? <br>
 3. a) What are the most used words by the Queen in 1952, 1953 and by the King in 2022, 2023? (a comparison of the Queen’s and the King’s first two speeches) <br>
 b) What are the most used words by the Queen in 2020, 2021 and by the King in 2022, 2023? (a comparison of the last two speeches of the Queen and the first two speeches of the King, from the perspective of continuity)
 
-**11. Text analysis in python - Collecting Data**<br>
-In order to answer our research questions for Collecting Data, we conducted a text analysis and employed the libraries and visualizations available in python.<br>
+**11. Text analysis - Collecting Data**<br>
+In order to answer our research questions for Collecting Data, we conducted a text analysis and employed the libraries (nltk for natural language processing, pandas for data manipulation and analysis, DataFrame and Series) and visualizations (matplotlib.pyplot) available in python.<br>
 
 **12. Stylometric analysis - Tools and Methods**<br>
 In order to answer our research questions for Tools and Methods, we carried out a stylometric analysis and utilized the Stylo package of R.<br>
 We used Cluster Analysis and Craig's Zeta score and visualized the results in the form of dendrograms and graphs.
 
 **13. Tutorial**<br>
-We provide a tutorial on the use of the web crawler and on the cleaning and pre-processing in the form of Jupyter Notebooks.<br>
-We also created a tutorial for the exploration of themes using the tool Voyant.
+We provide a tutorial on the use of the web crawler, on the cleaning and pre-processing, and on text analysis (for the exploration of themes) using python in the form of Jupyter Notebooks.<br>
 
 **14. Active Learning Exercises**<br>
 We created active learning exercises on carrying out a sentiment analysis of the corpus. In the active learning exercises we use the VADER sentiment analyzer from the NLTK library. The exercises focus on the dissection of the emotional tone in each speech and tracking how these tones evolve in the speeches of Queen's and King's.
