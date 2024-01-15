@@ -105,7 +105,7 @@ In order to answer our research questions for Tools and Methods, we carried out 
 We used Cluster Analysis and Craig's Zeta score and visualized the results in the form of dendrograms and graphs.
 
 **13. Tutorial**<br>
-We provide a tutorial on the use of the web crawler, on the cleaning and pre-processing, and on text analysis (for the exploration of themes) using python in the form of Jupyter Notebooks.<br>
+We provide a tutorial on the use of the web crawler, on the cleaning and pre-processing, and on text analysis using python in the form of Jupyter Notebooks.<br>
 
 **14. Active Learning Exercises**<br>
 We created active learning exercises on carrying out a sentiment analysis of the corpus. In the active learning exercises we use the VADER sentiment analyzer from the NLTK library. The exercises focus on the dissection of the emotional tone in each speech and tracking how these tones evolve in the speeches of Queen's and King's.
@@ -123,7 +123,7 @@ To publish our findings, we created the following website: https://royal-christm
 - csv file containing metadata on the Queen’s speeches (metadata.csv)
 - csv file containing the cleaned speeches enriched with metadata on the Queen's speeches and with tokenized and lemmatized version of the main text section of the speeches (enriched_corpus.csv)
 - report on the stylometric analysis of the corpus (….pdf)
-- data management plan (….pdf)
+- data management plan (dmp.pdf)
 
 **Contributors**<br>
 Bente :rose:  Mathilde :sunflower: Mengying :leaves: Miriam :maple_leaf: Reka :evergreen_tree: Shiyan :herb: Yunchi :volcano:
