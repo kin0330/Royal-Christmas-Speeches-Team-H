@@ -88,8 +88,7 @@ The ***enriched_corpus.csv*** incorporates all the information provided in the d
 
 **10. Research questions**<br>
 
-***Collecting Data:***<br>
-1. Catsiapis (2005) mentions ‘family’, ’Commonwealth’ and ’Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?
+***Collecting Data:***<br>1. Catsiapis (2005) mentions ‘family’, ’Commonwealth’ and ’Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?
 2. When did the term 'empire' change to 'commonwealth'? And what terms are the most associated with both?
 3. What does readability analysis tell us?
 
