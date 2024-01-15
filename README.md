@@ -98,7 +98,7 @@ The ***enriched_corpus.csv*** incorporates all the information provided in the d
 b) What are the most used words by the Queen in 2020, 2021 and by the King in 2022, 2023? (a comparison of the last two speeches of the Queen and the first two speeches of the King, from the perspective of continuity)
 
 **11. Text analysis - Collecting Data**<br>
-In order to answer our research questions for Collecting Data, we conducted a text analysis and employed the libraries (nltk for natural language processing, pandas for data manipulation and analysis, DataFrame and Series) and visualizations (matplotlib.pyplot) available in python.<br>
+To answer our research questions for Collecting Data, we conducted a text analysis and employed the libraries (nltk for natural language processing, pandas for data manipulation and analysis, DataFrame and Series) and visualizations (matplotlib.pyplot) available in python.<br>
 
 **12. Stylometric analysis - Tools and Methods**<br>
 In order to answer our research questions for Tools and Methods, we carried out a stylometric analysis and utilized the Stylo package of R.<br>
@@ -122,7 +122,7 @@ To publish our findings, we created the following website: https://royal-christm
 - csv file containing the cleaned speeches (data.csv)
 - csv file containing metadata on the Queen’s speeches (metadata.csv)
 - csv file containing the cleaned speeches enriched with metadata on the Queen's speeches and with tokenized and lemmatized version of the main text section of the speeches (enriched_corpus.csv)
-- report on the stylometric analysis of the corpus (….pdf)
+- report on the stylometric analysis of the corpus (report.pdf)
 - data management plan (dmp.pdf)
 
 **Contributors**<br>
