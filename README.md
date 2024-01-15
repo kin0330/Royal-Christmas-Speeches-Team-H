@@ -32,7 +32,7 @@ We intended to gather the entirety of the Christmas speeches given by the late Q
 
 **6. Objectives**<br>
 a) answer our research questions<br>
-b) provide a tutorial<br>
+b) provide tutorials<br>
 c) create active learning exercises<br>
 
 **7. Data collection process**<br>
@@ -105,7 +105,7 @@ In order to answer our research questions for Tools and Methods, we carried out 
 We used Cluster Analysis and Craig's Zeta score and visualized the results in the form of dendrograms and graphs.
 
 **13. Tutorial**<br>
-We provide a tutorial on the use of the web crawler, on the cleaning and pre-processing, and on text analysis using python in the form of Jupyter Notebooks.<br>
+We provide tutorials on the use of the web crawler, on the cleaning and pre-processing, and on text analysis using python in the form of Jupyter Notebooks.<br>
 
 **14. Active Learning Exercises**<br>
 We created active learning exercises on carrying out a sentiment analysis of the corpus. In the active learning exercises we use the VADER sentiment analyzer from the NLTK library. The exercises focus on the dissection of the emotional tone in each speech and tracking how these tones evolve in the speeches of Queen's and King's.
