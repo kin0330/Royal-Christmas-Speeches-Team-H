@@ -89,16 +89,19 @@ The ***enriched_corpus.csv*** incorporates all the information provided in the d
 **10. Research questions**<br>
 
 ***Collecting Data:***<br>
-Are there any other keywords / key themes in the Queen’s Christmas speeches other than family, the Commonwealth and Christmas? 
+1. Catsiapis (2005) mentions ‘family’, ’Commonwealth’ and ’Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?
+2. When did the term 'empire' change to 'commonwealth'? And what terms are the most associated with both?
+3. What does readability analysis tell us?
 
 ***Tools and Methods:***<br>1. Does the style of the Queen’s Christmas speeches evolve over time or does it stay the same? <br>
 2. Are King Charles III's speeches stylistically similar or dissimilar to Queen Elizabeth's Christmas speeches? <br>
 3. a) What are the most used words by the Queen in 1952, 1953 and by the King in 2022, 2023? (a comparison of the Queen’s and the King’s first two speeches) <br>
 b) What are the most used words by the Queen in 2020, 2021 and by the King in 2022, 2023? (a comparison of the last two speeches of the Queen and the first two speeches of the King, from the perspective of continuity)
 
-**11. Collecting Data analysis**<br>
+**11. Text analysis in python - Collecting Data**<br>
+In order to answer our research questions for Collecting Data, we conducted a text analysis and employed the libraries and visualizations available in python.<br>
 
-**12. Stylometric analysis**<br>
+**12. Stylometric analysis - Tools and Methods**<br>
 In order to answer our research questions for Tools and Methods, we carried out a stylometric analysis and utilized the Stylo package of R.<br>
 We used Cluster Analysis and Craig's Zeta score and visualized the results in the form of dendrograms and graphs.
 
@@ -116,12 +119,13 @@ To publish our findings, we created the following website: https://royal-christm
 - description of the repository and the group projects (README.md )
 - Jupyter Notebook: first upload for the web crawler (queen_crawler.ipynb)
 - Jupyter Notebook: cleaning and pre-processing the corpus (corpus_processing.ipynb)
+- Jupyter Notebook: text analysis in python (python_analysis.ipynb)
+- Jupyter Notebook: active learning exercises (processing_ALE.ipynb)
 - csv file containing the cleaned speeches (data.csv)
 - csv file containing metadata on the Queen’s speeches (metadata.csv)
 - csv file containing the cleaned speeches enriched with metadata on the Queen's speeches and with tokenized and lemmatized version of the main text section of the speeches (enriched_corpus.csv)
 - report on the stylometric analysis of the corpus (….pdf)
 - data management plan (….pdf)
-- …
 
 **Contributors**<br>
 Bente :rose:  Mathilde :sunflower: Mengying :leaves: Miriam :maple_leaf: Reka :evergreen_tree: Shiyan :herb: Yunchi :volcano:
