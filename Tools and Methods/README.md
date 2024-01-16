@@ -23,8 +23,8 @@ The corpus is suitable for researchers who are interested in the Christmas messa
 We intended to gather the entirety of the Christmas speeches given by the late Queen Elizabeth II and her son’s, King Charles III’s, Christmas speeches that he has delivered up until now. We aimed to compare the current King’s speeches with those of the late Queen’s. The speeches comprise a homogeneous corpus.
 
 **6. Dataset**<br>
-We worked with the text files that resulted from the data collection and the cleaning processes of our Collecting Data project.<br>
-For more information, please see the [README.md](https://github.com/kin0330/Royal-Christmas-Speeches-Team-H/blob/main/Collecting%20Data/README.md) file of our Collecting Data project. 
+We worked with the text files that resulted from the data collection and the cleaning processes of our Collecting Data project (cleaned_text_files folder).<br>
+For more information on the data collection and cleaning processes, please see the [README.md](https://github.com/kin0330/Royal-Christmas-Speeches-Team-H/blob/main/Collecting%20Data/README.md) file of our Collecting Data project. 
 
 **7. Research questions - Tools and Methods**<br>
 1. Does the style of the Queen’s Christmas speeches evolve over time or does it stay the same? <br>
