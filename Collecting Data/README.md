@@ -74,8 +74,8 @@ To answer our research questions for Collecting Data, we conducted a text analys
 **11. Tutorial**<br>
 We provided tutorials on web scraping, on cleaning and pre-processing, and on text analysis using Python in the form of Jupyter Notebooks.<br>
 
-**12. Active Learning Exercises**<br>
-We created active learning exercises on carrying out a sentiment analysis of the corpus. In the active learning exercises we use the VADER sentiment analyzer from the NLTK library. The exercises focus on the dissection of the emotional tone in each speech and tracking how these tones evolve in the Queen's speeches. Further, we invite readers to reflect on the limitations and capabilities of distant reading through this learning exercise.
+**12. Active Learning Exercise**<br>
+We created an active learning exercise on carrying out a sentiment analysis of the corpus. In the active learning exercise we use the VADER sentiment analyzer from the NLTK library. The exercise focuses on the dissection of the emotional tone in each speech and tracking how these tones evolve in the Queen's speeches. Further, we invite readers to reflect on the limitations and capabilities of distant reading through this learning exercise.
 
 **13. Research output**<br>
 To publish our findings, we created the following website: https://royal-christmas-messages.my.canva.site/
