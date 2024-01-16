@@ -82,15 +82,12 @@ We created an active learning exercise on carrying out a sentiment analysis of t
 To publish our findings, we created the following website: https://royal-christmas-messages.my.canva.site/
 
 **16. Files in this repository**<br>
-- description of the repository and the group projects (README.md )
+- `README.md` description of the repositor
 - Jupyter Notebook: first upload for the web crawler (queen_crawler.ipynb)
-- Jupyter Notebook: cleaning and pre-processing the corpus (corpus_processing.ipynb)
 - Jupyter Notebook: text analysis in python (python_analysis.ipynb)
 - Jupyter Notebook: active learning exercises (processing_ALE.ipynb)
-- csv file containing the cleaned speeches (data.csv)
 - csv file containing metadata on the Queen’s speeches (metadata.csv)
 - csv file containing the cleaned speeches enriched with metadata on the Queen's speeches and with tokenized and lemmatized version of the main text section of the speeches (enriched_corpus.csv)
-- report on the stylometric analysis of the corpus (report.pdf)
 - data management plan (dmp.pdf)
 
 **Contributors**<br>
