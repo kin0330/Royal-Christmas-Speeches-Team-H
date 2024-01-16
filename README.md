@@ -36,25 +36,15 @@ b) provide tutorials<br>
 c) create active learning exercises<br>
 
 **7. Data collection process**<br>
-The transcripts of the speeches were collected through web scraping from the [official website of the British Royal family](https://www.royal.uk/the-christmas-broadcast). We created a web crawler that goes through the links by formatting the string and saves the HTML files. After this the text is extracted using the Beautiful Soup library and saved in text files.
+The transcripts of the speeches were collected through web scraping from the [official website of the British Royal family](https://www.royal.uk/the-christmas-broadcast). We created a web crawler that went through the links by formatting the string and saves the HTML files. After this the text was extracted using the Beautiful Soup library and saved in text files.
 
 **8. Cleaning and pre-processing**<br>
 The saved text files contained sections that we did not intend to analyze. Therefore, we manually annotated different sections of the transcripts - abstract, introduction, main text - so that we could focus on the main text part. We extracted and cleaned the three different sections, performed word counting and saved the results as a csv file. Then, we gathered further contextual metadata on the speeches (metadata.csv). Finally, we combined the information on the cleaned sections and the metadata, and enriched that corpus with word tokens, sentence tokens and lemmas of the main text part (enriched_corpus.csv).<br>
 
 **9. Dataset**<br>
-We gathered data and created three datasets in the form of three csv files: data.csv, metadata.csv and enriched-corpus.csv.<br>
-The ***data.csv*** file includes the cleaned sections of the speeches (abstract, introduction, main text) and their word count.<br>
-| Columns | Descriptions |
-| ------------- | ------------- |
-| Title | the title of the speech |
-| CleanedAbstract | the cleaned abstract section of the speech |
-| AbstractWordCount | the number of words appearing in the abstract |
-| CleanedIntro | the cleaned introduction section of the speech |
-| IntroWordCount | the number of words appearing in the introduction |
-| CleanedMainText | the cleaned main text section of the speech |
-| MainTextWordCount | the number of words appearing in the main text |
+We gathered data and created datasets in the form of two csv files: metadata.csv and enriched_corpus.csv.<br>
 
-The ***metadata.csv*** file contains further information on the speeches, such as in which year they appeared, which monarch delivered the speech, the type of media that broadcast the speech, etc.<br>
+The ***metadata.csv*** file contains further contextual information on the speeches, such as in which year they appeared, which monarch delivered the speech, the type of media that broadcast the speech, etc.<br>
 | Columns | Descriptions |
 | ------------- | ------------- |
 | year | the year in which the speech was given |
@@ -64,7 +54,7 @@ The ***metadata.csv*** file contains further information on the speeches, such a
 | place | the location at which the speech was given |
 | context | additional contextual information about the speech |
 
-The ***enriched_corpus.csv*** incorporates all the information provided in the data.csv and metadata.csv and is further supplemented with lists of word tokens, sentence tokens and lemmas of the main text of each speech.
+The ***enriched_corpus.csv*** incorporates all the information on the cleaned sections and the metadata, and is further supplemented with lists of word tokens, sentence tokens and lemmas of the main text of each speech.
 | Columns | Descriptions |
 | ------------- | ------------- |
 | year | the year in which the speech was given |
@@ -103,7 +93,7 @@ In order to answer our research questions for Tools and Methods, we carried out 
 We used Cluster Analysis and Craig's Zeta score and visualized the results in the form of dendrograms and graphs.
 
 **13. Tutorial**<br>
-We provide tutorials on the use of the web crawler, on the cleaning and pre-processing, and on text analysis using python in the form of Jupyter Notebooks.<br>
+We provided tutorials on the use of the web crawler, on the cleaning and pre-processing, and on the theme analysis using python in the form of Jupyter Notebooks.<br>
 
 **14. Active Learning Exercises**<br>
 We created active learning exercises on carrying out a sentiment analysis of the corpus. In the active learning exercises we use the VADER sentiment analyzer from the NLTK library. The exercises focus on the dissection of the emotional tone in each speech and tracking how these tones evolve in the speeches of Queen's and King's.
@@ -117,7 +107,6 @@ To publish our findings, we created the following website: https://royal-christm
 - Jupyter Notebook: cleaning and pre-processing the corpus (corpus_processing.ipynb)
 - Jupyter Notebook: text analysis in python (python_analysis.ipynb)
 - Jupyter Notebook: active learning exercises (processing_ALE.ipynb)
-- csv file containing the cleaned speeches (data.csv)
 - csv file containing metadata on the Queen’s speeches (metadata.csv)
 - csv file containing the cleaned speeches enriched with metadata on the Queen's speeches and with tokenized and lemmatized version of the main text section of the speeches (enriched_corpus.csv)
 - report on the stylometric analysis of the corpus (report.pdf)
