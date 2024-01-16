@@ -1,7 +1,7 @@
 # Royal Christmas Speeches <br>
 
-**1. About the repository**<br>
-This repository contains materials of Group H’s group projects for the subjects Collecting Data and Tools and Methods.
+**1. About the folder**<br>
+This folder contains materials of Group H’s group project for the subject Collecting Data.
 
 **2. Introduction and background**<br>
 
@@ -21,18 +21,16 @@ The corpus is suitable for researchers who are interested in the Christmas messa
 **5. Text selection criteria**<br>
 We intended to gather the entirety of the Christmas speeches given by the late Queen Elizabeth II and her son’s, King Charles III’s, Christmas speeches that he has delivered up until now. We aimed to compare the current King’s speeches with those of the late Queen’s. The speeches comprise a homogeneous corpus.
 
-**. Data collection process**<br>
-The transcripts of the speeches were collected through web scraping from the [official website of the British Royal family](https://www.royal.uk/the-christmas-broadcast). We created a web crawler that goes through the links by formatting the string and saves the HTML files. After this the text is extracted using the Beautiful Soup library and saved in text files.
+**6. Data collection process**<br>
+The transcripts of the speeches were collected through web scraping from the [official website of the British Royal family](https://www.royal.uk/the-christmas-broadcast). We created a web crawler that went through the links by formatting the string and saved the HTML files. After this, the text was extracted using the Beautiful Soup library and was saved in text files.
 
-**8. Cleaning and pre-processing**<br>
-The saved text files needed to be cleaned because they contained parts that we did not mean to analyze (abstract, introduction). Therefore, we manually annotated different sections of the transcripts (abstract, introduction, main part) to be able to carry out analyses on the main part. We saved the cleaned text in a CSV file, and the main text in txt files.<br>
-We added further metadata to the csv file, such as where the speeches were given, when they were first broadcast on TV, etc.<br>
-Finally, we saved the clean corpus and the metadata in the same CSV file.
+**7. Cleaning and pre-processing**<br>
+The saved text files contained sections that we did not intend to analyze. Therefore, we manually annotated different sections of the transcripts - abstract, introduction, main text - so that we could focus on the main text part. We extracted and cleaned the three different sections, performed word counting and saved the results as a csv file. Then, we gathered further contextual metadata on the speeches (metadata.csv). Finally, we combined the information on the cleaned sections and the metadata, and enriched that corpus with word tokens, sentence tokens and lemmas of the main text part (enriched_corpus.csv).<br>
 
-**9. Dataset**<br>
-We gathered data and created three datasets in the form of 2 csv files: data.csv, metadata.csv and enriched-corpus.csv.<br>
+**8. Dataset**<br>
+We gathered data and created datasets in the form of 2 csv files: metadata.csv and enriched_corpus.csv.<br>
 
-The ***metadata.csv*** file contains further information on the speeches, such as in which year they appeared, which monarch delivered the speech, the type of media that broadcast the speech, etc.<br>
+The ***metadata.csv*** file contains further contextual information on the speeches, such as in which year they appeared, which monarch delivered the speech, the type of media that broadcast the speech, etc.<br>
 | Columns | Descriptions |
 | ------------- | ------------- |
 | year | the year in which the speech was given |
@@ -42,7 +40,7 @@ The ***metadata.csv*** file contains further information on the speeches, such a
 | place | the location at which the speech was given |
 | context | additional contextual information about the speech |
 
-The ***enriched_corpus.csv*** incorporates all the information provided in the data.csv and metadata.csv and is further supplemented with lists of word tokens, sentence tokens and lemmas of the main text of each speech.
+The ***enriched_corpus.csv*** incorporates all the information on the cleaned sections and the metadata, and is further supplemented with lists of word tokens, sentence tokens and lemmas of the main text of each speech.
 | Columns | Descriptions |
 | ------------- | ------------- |
 | year | the year in which the speech was given |
@@ -62,27 +60,28 @@ The ***enriched_corpus.csv*** incorporates all the information provided in the d
 | SentenceTokensMain | the sentence tokens of the main text section of the speech |
 | LemmasMain | the lemmas of the main text section of the speech |
 
-**10. Research questions**<br>
-
-***Collecting Data:***<br>1. Catsiapis (2005) mentions ‘family’, ’Commonwealth’ and ’Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?<br>
+**9. Research questions - Collecting Data**<br>
+1. Catsiapis (2005) mentions ‘family’, ‘Commonwealth’ and ‘Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?<br>
 2. When did the term 'empire' change to 'commonwealth'? And what terms are the most associated with both?<br>
 3. What does readability analysis tell us?<br>
 
+Source:<br>
+Catsiapis, H. 2005. The Queen's Christmas Messages. In Vernon, P. (Ed.), Seeing Things: literature and the visual : Papers from the Fifth International British Council Symposium, September 2001. Presses universitaires François-Rabelais. doi :10.4000/books.pufr.4223<br>
 
-**11. Text analysis - Collecting Data**<br>
-To answer our research questions for Collecting Data, we conducted a text analysis and employed the libraries (nltk for natural language processing, pandas for data manipulation and analysis, DataFrame and Series) and visualizations (matplotlib.pyplot) available in python.<br>
+**10. Theme analysis - Collecting Data**<br>
+To answer our research questions for Collecting Data, we conducted a text analysis and employed the libraries (nltk for natural language processing, pandas for data manipulation and analysis, DataFrame and Series) and visualizations (matplotlib.pyplot) available in Python.<br>
 
-**13. Tutorial**<br>
-We provide tutorials on the use of the web crawler, on the cleaning and pre-processing, and on text analysis using Python in the form of Jupyter Notebooks.<br>
+**11. Tutorial**<br>
+We provided tutorials on web scraping, on cleaning and pre-processing, and on text analysis using Python in the form of Jupyter Notebooks.<br>
 
-**14. Active Learning Exercise**<br>
-We created an active learning exercise on carrying out a sentiment analysis of the corpus. In the active learning exercises we use the VADER sentiment analyzer from the NLTK library. The exercises focus on the dissection of the emotional tone in each speech and tracking how these tones evolve in the Queen's speeches. Further, we invite readers to reflect on the limitations and capabilities of distant reading throught this learning exercise.
+**12. Active Learning Exercise**<br>
+We created an active learning exercise on carrying out a sentiment analysis of the corpus. In the active learning exercises we use the VADER sentiment analyzer from the NLTK library. The exercises focus on the dissection of the emotional tone in each speech and tracking how these tones evolve in the Queen's speeches. Further, we invite readers to reflect on the limitations and capabilities of distant reading through this learning exercise.
 
-**15. Research output**<br>
+**13. Research output**<br>
 To publish our findings, we created the following website: https://royal-christmas-messages.my.canva.site/
 
-**16. Files in this repository**<br>
-- `README.md` description of the repositor
+**14. Files in this folder**<br>
+- `README.md` description of the folder
 - `christmas_speeches_webcrawler.ipynb` web crawler for downloading the HTML and text files
 - `theme_analysis.ipynb` thematic analysis of speeches using keywords
 - `processing_ALE.ipynb` preprocessing and creation of corpus & 
