@@ -24,7 +24,7 @@ We intended to gather the entirety of the Christmas speeches given by the late Q
 
 **6. Dataset**<br>
 We worked with the text files that resulted from the data collection and the cleaning processes of our Collecting Data project.<br>
-For more information, please see the README.md file of our Collecting data project. 
+For more information, please see the [README.md] (https://github.com/kin0330/Royal-Christmas-Speeches-Team-H/blob/main/Collecting%20Data/README.md) file of our Collecting Data project. 
 
 **7. Research questions - Tools and Methods**<br>
 1. Does the style of the Queen’s Christmas speeches evolve over time or does it stay the same? <br>
