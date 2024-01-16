@@ -86,9 +86,9 @@ To publish our findings, we created the following website: https://royal-christm
 - `christmas_speeches_webcrawler.ipynb` web crawler for downloading the HTML and text files
 - `theme_analysis.ipynb` thematic analysis of speeches using keywords
 - `processing_ALE.ipynb` preprocessing and creation of corpus & 
-- csv file containing metadata on the Queen’s speeches (metadata.csv)
-- csv file containing the cleaned speeches enriched with metadata on the Queen's speeches and with tokenized and lemmatized version of the main text section of the speeches (enriched_corpus.csv)
-- data management plan (dmp.pdf)
+- `metadata.csv` csv file containing metadata on the Queen’s speeches 
+- `enriched_corpus.csv` csv file containing the cleaned speeches enriched with metadata on the Queen's speeches and with tokenized and lemmatized version of the main text section of the speeches 
+- `dmp.pdf` data management plan
 
 **Contributors**<br>
 Bente :rose:  Mathilde :sunflower: Mengying :leaves: Miriam :maple_leaf: Reka :evergreen_tree: Shiyan :herb: Yunchi :volcano:
