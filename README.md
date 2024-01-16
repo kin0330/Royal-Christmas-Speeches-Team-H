@@ -25,92 +25,19 @@ For more information, please see our report on stylometric analysis (report.pdf)
 Our corpus includes the transcripts of Christmas speeches given by the British Queen Elizabeth II from 1952 to 2021 and her successor King Charles III in 2022 and 2023. The corpus consists of 72 speeches altogether.
 
 **4. Target audience**<br>
-The corpus is suitable for researchers who are interested in the Christmas messages given by the British royal family, especially in their analysis from a text-based perspective.
+The corpus is suitable for researchers who are interested in the Christmas messages given by the British royal family, especially in their analysis from a text-based perspective.<br>
 
-**5. Text selection criteria**<br>
-We intended to gather the entirety of the Christmas speeches given by the late Queen Elizabeth II and her son’s, King Charles III’s, Christmas speeches that he has delivered up until now. We aimed to compare the current King’s speeches with those of the late Queen’s. The speeches comprise a homogeneous corpus.
+**5. Objectives**<br>
+a) answer our research questions - Tools and Methods, Collecting Data<br>
+b) provide tutorials - Collecting Data<br>
+c) create active learning exercises - Collecting Data <br>
 
-**6. Objectives**<br>
-a) answer our research questions<br>
-b) provide tutorials<br>
-c) create active learning exercises<br>
-
-**7. Data collection process**<br>
-The transcripts of the speeches were collected through web scraping from the [official website of the British Royal family](https://www.royal.uk/the-christmas-broadcast). We created a web crawler that went through the links by formatting the string and saves the HTML files. After this the text was extracted using the Beautiful Soup library and saved in text files.
-
-**8. Cleaning and pre-processing**<br>
-The saved text files contained sections that we did not intend to analyze. Therefore, we manually annotated different sections of the transcripts - abstract, introduction, main text - so that we could focus on the main text part. We extracted and cleaned the three different sections, performed word counting and saved the results as a csv file. Then, we gathered further contextual metadata on the speeches (metadata.csv). Finally, we combined the information on the cleaned sections and the metadata, and enriched that corpus with word tokens, sentence tokens and lemmas of the main text part (enriched_corpus.csv).<br>
-
-**9. Dataset**<br>
-We gathered data and created datasets in the form of two csv files: metadata.csv and enriched_corpus.csv.<br>
-
-The ***metadata.csv*** file contains further contextual information on the speeches, such as in which year they appeared, which monarch delivered the speech, the type of media that broadcast the speech, etc.<br>
-| Columns | Descriptions |
-| ------------- | ------------- |
-| year | the year in which the speech was given |
-| monarch | the name of the monarch by whom the speech was delivered |
-| media | the type of media that broadcast the speech |
-| channel | the name of the radio or TV channel that broadcast the speech |
-| place | the location at which the speech was given |
-| context | additional contextual information about the speech |
-
-The ***enriched_corpus.csv*** incorporates all the information on the cleaned sections and the metadata, and is further supplemented with lists of word tokens, sentence tokens and lemmas of the main text of each speech.
-| Columns | Descriptions |
-| ------------- | ------------- |
-| year | the year in which the speech was given |
-| monarch | the name of the monarch by whom the speech was delivered |
-| media | the type of media that broadcast the speech |
-| channel | the name of the radio or TV channel that broadcast the speech |
-| place | the location at which the speech was given |
-| context | additional contextual information about the speech |
-| Title | the title of the speech |
-| CleanedAbstract | the cleaned abstract section of the speech |
-| AbstractWordCount | the number of words appearing in the abstract |
-| CleanedIntro | the cleaned introduction section of the speech |
-| IntroWordCount | the number of words appearing in the introduction |
-| CleanedMainText | the cleaned main text section of the speech |
-| MainTextWordCount | the number of words appearing in the main text |
-| WordTokensMain | the word tokens of the main text section of the speech |
-| SentenceTokensMain | the sentence tokens of the main text section of the speech |
-| LemmasMain | the lemmas of the main text section of the speech |
-
-**10. Research questions**<br>
-
-***Collecting Data:***<br>1. Catsiapis (2005) mentions ‘family’, ‘Commonwealth’ and ‘Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?<br>
-2. When did the term 'empire' change to 'commonwealth'? And what terms are the most associated with both?<br>
-3. What does readability analysis tell us?<br>
-
-***Tools and Methods:***<br>1. Does the style of the Queen’s Christmas speeches evolve over time or does it stay the same? <br>
-2. Are King Charles III's speeches stylistically similar or dissimilar to Queen Elizabeth's Christmas speeches? <br>
-3. a) What are the most used words by the Queen in 1952, 1953 and by the King in 2022, 2023? (a comparison of the Queen’s and the King’s first two speeches) <br>
-b) What are the most used words by the Queen in 2020, 2021 and by the King in 2022, 2023? (a comparison of the last two speeches of the Queen and the first two speeches of the King, from the perspective of continuity)
-
-**11. Theme analysis - Collecting Data**<br>
-To answer our research questions for Collecting Data, we conducted a text analysis and employed the libraries (nltk for natural language processing, pandas for data manipulation and analysis, DataFrame and Series) and visualizations (matplotlib.pyplot) available in python.<br>
-
-**12. Stylometric analysis - Tools and Methods**<br>
-In order to answer our research questions for Tools and Methods, we carried out a stylometric analysis and utilized the Stylo package of R.<br>
-We used Cluster Analysis and Craig's Zeta score and visualized the results in the form of dendrograms and graphs.
-
-**13. Tutorial**<br>
-We provided tutorials on the use of the web crawler, on the cleaning and pre-processing, and on the theme analysis using python in the form of Jupyter Notebooks.<br>
-
-**14. Active Learning Exercises**<br>
-We created active learning exercises on carrying out a sentiment analysis of the corpus. In the active learning exercises we use the VADER sentiment analyzer from the NLTK library. The exercises focus on the dissection of the emotional tone in each speech and tracking how these tones evolve in the speeches of Queen's and King's.
-
-**15. Research output**<br>
+**6. Research output**<br>
 To publish our findings, we created the following website: https://royal-christmas-messages.my.canva.site/
 
-**16. Files in this repository**<br>
-- description of the repository and the group projects (README.md )
-- Jupyter Notebook: first upload for the web crawler (queen_crawler.ipynb)
-- Jupyter Notebook: cleaning and pre-processing the corpus (corpus_processing.ipynb)
-- Jupyter Notebook: text analysis in python (python_analysis.ipynb)
-- Jupyter Notebook: active learning exercises (processing_ALE.ipynb)
-- csv file containing metadata on the Queen’s speeches (metadata.csv)
-- csv file containing the cleaned speeches enriched with metadata on the Queen's speeches and with tokenized and lemmatized version of the main text section of the speeches (enriched_corpus.csv)
-- report on the stylometric analysis of the corpus (report.pdf)
-- data management plan (dmp.pdf)
+**7. Folders in this repository**<br>
+- Collecting Data
+- Tools and Methods
 
 **Contributors**<br>
 Bente :rose:  Mathilde :sunflower: Mengying :leaves: Miriam :maple_leaf: Reka :evergreen_tree: Shiyan :herb: Yunchi :volcano:
