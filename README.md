@@ -39,7 +39,7 @@ c) create active learning exercises<br>
 The transcripts of the speeches were collected through web scraping from the [official website of the British Royal family](https://www.royal.uk/the-christmas-broadcast). We created a web crawler that goes through the links by formatting the string and saves the HTML files. After this the text is extracted using the Beautiful Soup library and saved in text files.
 
 **8. Cleaning and pre-processing**<br>
-The saved text files contained sections that we did not intend to analyze. Therefore, we manually annotated different sections of the transcripts - abstract, introduction, main text - so that we could focus on the main text part. We extracted and cleaned the three different sections, performed word counting and saved the results in a csv file (data.csv). Then, we gathered further contextual metadata on the speeches (metadata.csv). Finally, we combined the contents of the files data.csv and metadata.csv, and enriched that corpus with word tokens, sentence tokens and lemmas of the main text part (enriched_corpus.csv).<br>
+The saved text files contained sections that we did not intend to analyze. Therefore, we manually annotated different sections of the transcripts - abstract, introduction, main text - so that we could focus on the main text part. We extracted and cleaned the three different sections, performed word counting and saved the results as a csv file. Then, we gathered further contextual metadata on the speeches (metadata.csv). Finally, we combined the information on the cleaned sections and the metadata, and enriched that corpus with word tokens, sentence tokens and lemmas of the main text part (enriched_corpus.csv).<br>
 
 **9. Dataset**<br>
 We gathered data and created three datasets in the form of three csv files: data.csv, metadata.csv and enriched-corpus.csv.<br>
@@ -86,7 +86,7 @@ The ***enriched_corpus.csv*** incorporates all the information provided in the d
 
 **10. Research questions**<br>
 
-***Collecting Data:***<br>1. Catsiapis (2005) mentions ‘family’, ’Commonwealth’ and ’Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?<br>
+***Collecting Data:***<br>1. Catsiapis (2005) mentions ‘family’, ‘Commonwealth’ and ‘Christmas’ as overarching themes in her close reading of the Queen’s Christmas speeches.<br>Can we identify the same themes with computational methods?<br>
 2. When did the term 'empire' change to 'commonwealth'? And what terms are the most associated with both?<br>
 3. What does readability analysis tell us?<br>
 
@@ -95,7 +95,7 @@ The ***enriched_corpus.csv*** incorporates all the information provided in the d
 3. a) What are the most used words by the Queen in 1952, 1953 and by the King in 2022, 2023? (a comparison of the Queen’s and the King’s first two speeches) <br>
 b) What are the most used words by the Queen in 2020, 2021 and by the King in 2022, 2023? (a comparison of the last two speeches of the Queen and the first two speeches of the King, from the perspective of continuity)
 
-**11. Text analysis - Collecting Data**<br>
+**11. Theme analysis - Collecting Data**<br>
 To answer our research questions for Collecting Data, we conducted a text analysis and employed the libraries (nltk for natural language processing, pandas for data manipulation and analysis, DataFrame and Series) and visualizations (matplotlib.pyplot) available in python.<br>
 
 **12. Stylometric analysis - Tools and Methods**<br>
