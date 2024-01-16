@@ -39,9 +39,7 @@ c) create active learning exercises<br>
 The transcripts of the speeches were collected through web scraping from the [official website of the British Royal family](https://www.royal.uk/the-christmas-broadcast). We created a web crawler that goes through the links by formatting the string and saves the HTML files. After this the text is extracted using the Beautiful Soup library and saved in text files.
 
 **8. Cleaning and pre-processing**<br>
-The saved text files needed to be cleaned because they contained parts that we did not mean to analyze (abstract, introduction). Therefore, we manually annotated different sections of the transcripts (abstract, introduction, main part) to be able to carry out analyses on the main part. We saved the cleaned text in a CSV file, and the main text in txt files.<br>
-We added further metadata to the csv file, such as where the speeches were given, when they were first broadcast on TV, etc.<br>
-Finally, we saved the clean corpus and the metadata in the same CSV file.
+The saved text files contained sections that we did not intend to analyze. Therefore, we manually annotated different sections of the transcripts - abstract, introduction, main text - so that we could focus on the main text part. We extracted and cleaned the three different sections, performed word counting and saved the results in a csv file (data.csv). Then, we gathered further contextual metadata on the speeches (metadata.csv). Finally, we combined the contents of the files data.csv and metadata.csv, and enriched that corpus with word tokens, sentence tokens and lemmas of the main text part (enriched_corpus.csv).<br>
 
 **9. Dataset**<br>
 We gathered data and created three datasets in the form of three csv files: data.csv, metadata.csv and enriched-corpus.csv.<br>
